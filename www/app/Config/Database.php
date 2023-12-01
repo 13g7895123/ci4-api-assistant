@@ -23,7 +23,7 @@ class Database extends Config
      *
      * @var string
      */
-    public $defaultGroup = 'default';
+    public $defaultGroup = 'maple';
 
     /**
      * The default database connection.
@@ -48,6 +48,26 @@ class Database extends Config
         'strictOn' => false,
         'failover' => [],
         'port'     => 9050,
+    ];
+
+    public $maple = [
+        'DSN'      => '',
+        'hostname' => '139.162.15.125',
+        'username' => 'maple_user',
+        'password' => 'v94176w6',
+        'database' => 'maple-db',
+        'DBDriver' => 'MySQLi',
+        'DBPrefix' => '',
+        'pConnect' => false,
+        'DBDebug'  => (ENVIRONMENT !== 'production'),
+        'charset'  => 'utf8',
+        'DBCollat' => 'utf8_general_ci',
+        'swapPre'  => '',
+        'encrypt'  => false,
+        'compress' => false,
+        'strictOn' => false,
+        'failover' => [],
+        'port'     => 9903,
     ];
 
     /**
